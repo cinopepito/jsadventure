@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+    <style>
+        html{
+            font-size: 62.5%;
+        }
+        #circle{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(76, 190, 10);
+            border-radius: 100%;
+            position:relative;
+            animation-name: rouge;
+            animation-duration:7s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes rouge{
+            0%{
+                left:0px;
+                top:0px;
+            }
+            25%{
+                left:200px;
+                top:0px;
+            }
+            50%{
+                left:200px;
+                top:200px;
+            }
+            75%{
+                left:0px;
+                top:200px;
+            }
+            100%{
+                left:0px;
+                top:0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        First Javascript
+    </h1>
+    <div id="circle">
+
+    </div>
+    <script>
+        let circle = document.getElementById('circle');
+        let compteur = 0;
+        circle.addEventListener('click',function(){
+            compteur = compteur + 1;
+            console.log(compteur);
+        })
+    
+    </script>
+</body>
+</html>
